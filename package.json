@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/jwtlake/presentness_client/issues"
   },
-  "homepage": "https://github.com/jwtlake/presentness_client#readme"
+  "homepage": "https://github.com/jwtlake/presentness_client#readme",
+  "dependencies": {
+    "arp-listener": "0.0.0",
+    "ping": "^0.1.10",
+    "request": "^2.64.0"
+  }
 }
