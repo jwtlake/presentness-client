@@ -1,0 +1,19 @@
+{
+  "name": "presentness_client",
+  "version": "1.0.0",
+  "description": "Client for reporting when someone is home and which devices on the network are running.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwtlake/presentness_client.git"
+  },
+  "author": "Jonathan Lake",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jwtlake/presentness_client/issues"
+  },
+  "homepage": "https://github.com/jwtlake/presentness_client#readme"
+}
