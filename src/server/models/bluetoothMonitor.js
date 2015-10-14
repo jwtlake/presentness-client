@@ -3,12 +3,12 @@
 //** Dependencies **//
 
 function bluetoothMonitor(deviceList) {
-        this.deviceList = deviceList;
+    this.deviceList = deviceList;
 };
 
 //** Prototypes **//
 bluetoothMonitor.prototype.start = function() {
-        console.log('bluetooth mon started');
+    //console.log('bluetooth mon started');
 };
 
 //** Functions **//
