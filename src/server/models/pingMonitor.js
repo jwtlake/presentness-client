@@ -41,7 +41,7 @@ function _scanDeviceList() {
 
 			//get time vars			
 			var now = new Date();
-			var lastSeen = n.lastSeen; if(lastSeen === null) { lastSeen = new Date(0); } //set min date if not seen yet
+			var lastSeen = new Date(n.lastSeen); //should result in min date if null
 			var nextCheck = new Date(lastSeen.getTime() + timeout); // lastSeen + timeout int
 
 			//ping device only after timeout int
