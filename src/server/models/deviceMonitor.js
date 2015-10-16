@@ -30,8 +30,8 @@ deviceMonitor.prototype.reportCurrent = function() {
 	var dList = this.deviceList.list;
 	var now = new Date();
 	_.forEach(dList, function(n) {
-		var diffInSeconds = '';
-		if(n.lastSeen != ''){ diffInSeconds = ((now - n.lastSeen) / 1000).toFixed(0); }
+		var diffInSeconds = 'NA';
+		if(n.lastSeen !== null){ diffInSeconds = ((now - new Date(n.lastSeen)) / 1000).toFixed(0); }
 		console.log('alias: ' + n.alias + ' isPresent: ' + n.isPresent + ' lastSeen(seconds): ' + diffInSeconds);	
 	});
 };
