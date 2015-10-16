@@ -1,4 +1,4 @@
-# presentness_client
+# presentness-client
 
 ## Noun
 "the state of being present"
