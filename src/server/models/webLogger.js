@@ -13,15 +13,15 @@ module.exports = {
 
 		var alias = update.alias; //need to come up with a primary key. Would like to use mac but : char might cause problems
 		var cleanMac = update.macAddress.replace(/:/g,'');
-		// var macAddress = update.macAddress;
-		// var ip  = update.ip;
-		// var isPresent = update.isPresent;
-		// var lastSeen = update.lastSeen;
+		// // var macAddress = update.macAddress;
+		// // var ip  = update.ip;
+		// // var isPresent = update.isPresent;
+		// // var lastSeen = update.lastSeen;
 
-		console.log('Sending Update for: ' + alias);
-		console.log('CleanMac: ' + cleanMac);
-		console.log('Data: ' + postData);
-		console.log(postData);
+		// console.log('Sending Update for: ' + alias);
+		// console.log('CleanMac: ' + cleanMac);
+		// console.log('Data: ' + postData);
+		// console.log(postData);
 
 		//send update to server
 		request.post({
@@ -29,10 +29,10 @@ module.exports = {
 			form: postData
 		}, function(err, httpResponse, body) {
 			if(err){
-				console.log('Error: ' + err);
+				console.log('Updating ['+alias+']... Error: ' + err);
 			}
 			else{
-				console.log('Success!');
+				console.log('Updating ['+alias+']... Success!');
 			}
 		});
 	}

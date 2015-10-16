@@ -14,4 +14,5 @@ dList.getLatest();
 var dMonitor = new deviceMonitor(dList);
 dMonitor.start();
 
+//repr
 setInterval(function() { dMonitor.reportCurrent(); }, 5000); 
